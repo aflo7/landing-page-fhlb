@@ -52,24 +52,24 @@ main > h2 {
   background-position: center;
 }
 
-.more-text {
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
-
 @media screen and (min-width: 1000px) {
+  .more-text {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
   .mobile-burger {
     display: none;
   }
 
   .desktop-burger {
-    font-size: 3rem;
+    font-size: 2.5rem;
     cursor: pointer;
   }
   .desktop-right-nav {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
+    font-size: 0.95rem;
   }
 
   .desktop-burger-wrapper {
