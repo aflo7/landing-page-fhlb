@@ -1,0 +1,92 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  margin: 0 auto;
+  max-width: 1280px;
+  align-items: center;
+  padding-bottom: 0px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+main > h2 {
+  max-width: 800px;
+}
+
+.learn-who-btn {
+  background-color: transparent;
+  border: 5px solid rgb(184, 98, 42);
+  padding: 10px;
+  color: white;
+  width: fit-content;
+}
+
+.learn-who-btn:hover {
+  background-color: rgb(184, 98, 42);
+}
+
+.desktop-right-nav {
+  display: none;
+}
+
+.mobile-burger {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.the-wrapper {
+  background: linear-gradient(rgba(12, 42, 76, 0.7), rgba(12, 42, 76, 0.7)),
+    url(./assets/hero-home-houses.png);
+  color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+.more-text {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .mobile-burger {
+    display: none;
+  }
+
+  .desktop-burger {
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  .desktop-right-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .desktop-burger-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    font-size: 1.2rem;
+  }
+
+  main > h2 {
+    font-size: 4.5rem;
+  }
+
+  .learn-who-btn {
+    font-size: 1.2rem;
+  }
+}
